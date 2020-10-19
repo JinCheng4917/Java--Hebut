@@ -1,2 +1,2 @@
 # Java--Hebut
-Java computer experiment
+Java 上机实验
