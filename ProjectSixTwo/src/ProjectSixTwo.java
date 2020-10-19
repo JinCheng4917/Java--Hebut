@@ -31,17 +31,17 @@ public class ProjectSixTwo {
                 fileWriter1.write(String.valueOf(scanner.nextInt()));
                 fileWriter1.write("\n");
                 System.out.println("请确定是否结束：bye-结束  next-继续");
-                Scanner  selectScanner = new Scanner(System.in);
-                String mySelect  = selectScanner.next();
-                if (mySelect.equals("bye")){
+                Scanner selectScanner = new Scanner(System.in);
+                String mySelect = selectScanner.next();
+                if (mySelect.equals("bye")) {
                     break;
-                }else if (mySelect.equals("next")) {
+                } else if (mySelect.equals("next")) {
                     continue;
                 }
             }
             fileWriter1.close();
-            Files.copy(myFile1.toPath(),myFile2.toPath());
-        }catch (IOException e){
+            Files.copy(myFile1.toPath(), myFile2.toPath());
+        } catch (IOException e) {
             System.out.println(e);
         }
     }
