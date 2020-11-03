@@ -3,7 +3,6 @@ package Main;
 import Function.MyFunction;
 
 import java.io.*;
-import java.nio.file.Files;
 import java.util.Scanner;
 
 public class ProjectSixTwo {
@@ -16,6 +15,8 @@ public class ProjectSixTwo {
 
         myFunction.flushFile(myFile1);
         myFunction.flushFile(myFile2);
+
+
         try {
             FileWriter fileWriter1 = new FileWriter(myFile1);
             fileWriter1.write("姓名    专业   班级    家庭住址     学号    \n");
@@ -32,6 +33,8 @@ public class ProjectSixTwo {
                 fileWriter1.write(String.valueOf(scanner.nextInt()));
                 fileWriter1.write("\n");
                 System.out.println("请确定是否结束：bye-结束  回车-继续");
+
+                //根据输入数据的长度判断是否为回车
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
                 String selectScanner  = bufferedReader.readLine();
                 if (selectScanner.equals("bye")) {

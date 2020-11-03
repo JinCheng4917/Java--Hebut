@@ -30,6 +30,12 @@ public class MyFunction {
 
     }
 
+
+    /**
+     * 进行文件复制操作
+     * @param sourceFile 源文件
+     * @param targetFile 目标文件
+     */
     public void copyFile(File sourceFile, File targetFile) {
         try {
             FileReader fileReader = new FileReader(sourceFile);
@@ -50,6 +56,10 @@ public class MyFunction {
 
     }
 
+    /**
+     * 进行文件读取操作
+     * @param file 要读取的文件
+     */
     public void readFile(File file) {
         try {
             FileReader fileReader = new FileReader(file);
